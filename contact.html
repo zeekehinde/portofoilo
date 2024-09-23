@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav class="fixed-navbar">
+        <ul>
+            <li><a href="work.html">UI Design</a></li>
+            <li><a href="graphic.html">Graphics</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="#contact" id="remain">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-section"></div>
+        <h1 data-aos="fade-down-right" data-aos-delay="250" data-aos-offset="210">Let's Work Together</h1>
+        <p data-aos="fade-right" data-aos-delay="850" data-aos-offset="210">I'd love to hear from you! Get in touch with me using the form below.</p>
+    </div>
+
+    <div class="contact-form-section">
+        <form action="https://formspree.io/f/xdknrgka" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Reason for Contact" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+
+    <div class="cont">
+        <div class="square"></div>
+        <h1>Let's Chat</h1>
+        <div class="socials">
+            <a href="https://www.instagram.com/zeekehinde?igsh=MWRleHFnajh0cG12cA==">Instagram</a>  
+            <a href="https://x.com/zeekehinde?t=e8uNu84xYNA9KboNc8PCpQ&s=09">X</a>            
+            <a href="https://www.behance.net/zeekehinde">Behance</a>             
+        </div>
+        <h6>or</h6>
+        <h5>zainbkehind@gmail.com</h5>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>

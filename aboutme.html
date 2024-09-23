@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav class="fixed-navbar">
+        <ul>
+            <li><a href="work.html">UI Design</a></li>
+            <li><a href="graphic.html">Graphics</a></li>
+            <li><a href="#aboutme" id="remain">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li> 
+        </ul>
+    </nav>
+
+    <div class="intro">
+        <h1 data-aos="fade-down-right" data-aos-delay="250" data-aos-offset="210">About Me!</h1>
+        <h5 data-aos="fade-right" data-aos-delay="850" data-aos-offset="210">My name is Zainab Kehinde. I've always been a lover of art and anything design <br> as far back as I can remember, I love to travel and make memories I'm a <br> curious and creative individual with a passion for learning and growth. <br> With a keen eye for detail and a love for storytelling, I bring ideas to <br> life and connect with others through my work. <br> Download CV sample <a class="download">here</a></h5>
+    </div>
+<embed src="images/cv_15_1726688696695.pdf" type="application/pdf" style="display: none;" id="cv">
+    <div class="image-container">
+        <div class="overlay"></div>
+        <div class="content">
+            <p data-aos="fade-right" data-aos-delay="250" data-aos-offset="210">Hello! <br> It's nice <br> to meet <br> you.</p>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <img src="images/5.jpg" alt="" height="400px" width="400px"  data-aos="zoom-in-up">
+        <img src="images/6.jpg" alt="" height="400px" width="400px"  data-aos="zoom-in-up">
+    </div>
+    
+
+    <div class="cont">
+        <div class="square"></div>
+        <h1>Let's Chat</h1>
+        <div class="socials">
+            <a href="https://www.instagram.com/zeekehinde?igsh=MWRleHFnajh0cG12cA==">Instagram</a>  
+            <a href="https://x.com/zeekehinde?t=e8uNu84xYNA9KboNc8PCpQ&s=09">X</a>            
+            <a href="https://www.behance.net/zeekehinde">Behance</a>             
+        </div>
+        <h6>or</h6>
+        <h5>zainbkehind@gmail.com</h5>
+    </div>
+
+    <script>
+        document.querySelector('.download').addEventListener('click', function() {
+    // Get the image element
+    var cvImage = document.getElementById('cv');
+    
+    // Create a temporary link element
+    var link = document.createElement('a');
+    link.href = cvImage.src; // Set the href to the image URL
+    link.download = 'CV.pdf'; // Set the default file name for the download
+    
+    // Append the link to the body (it needs to be part of the document to work)
+    document.body.appendChild(link);
+    
+    // Trigger a click on the link to start the download
+    link.click();
+    
+    // Remove the link from the document
+    document.body.removeChild(link);
+});
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
