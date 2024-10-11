@@ -54,30 +54,30 @@
         <h5>zainbkehind@gmail.com</h5>
     </div>
 
-    <script>
-        document.querySelector('.download').addEventListener('click', function() {
-    // Get the image element
-    var cvImage = document.getElementById('cv');
-    
-    // Create a temporary link element
-    var link = document.createElement('a');
-    link.href = cvImage.src; // Set the href to the image URL
-    link.download = 'CV.pdf'; // Set the default file name for the download
-    
-    // Append the link to the body (it needs to be part of the document to work)
-    document.body.appendChild(link);
-    
-    // Trigger a click on the link to start the download
-    link.click();
-    
-    // Remove the link from the document
-    document.body.removeChild(link);
-});
-    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
+    
+
+<script>
+    document.querySelector(".ham").addEventListener("click",function(){
+        document.querySelector(".ull").classList.toggle("active")
+    })
+
+    document.querySelector(".intro").addEventListener("click",function(){
+            document.querySelector(".ull").classList.remove("active")
+        })
+
+        document.querySelector(".image-container").addEventListener("click",function(){
+            document.querySelector(".ull").classList.remove("active")
+        })
+
+        document.querySelector(".cont").addEventListener("click",function(){
+            document.querySelector(".ull").classList.remove("active")
+        })
+</script>
 
 </body>
 </html>

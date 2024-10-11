@@ -12,8 +12,8 @@
         <div class="logo">
             <img src="Assets/logo.png" alt="my logo" class="logo-img">
         </div>
-        <ul>
-            <li><a href="#home">UI Design</a></li>
+        <ul class="ull">
+            <li><a href="index.html">UI Design</a></li>
             <li><a href="graphic.html">Graphics</a></li>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="contact.html" id="remain">Contact Me</a></li>
@@ -24,7 +24,7 @@
         </div>
     </nav>
 
-    <div class="hero-section"></div>
+    <div class="hero-section">
         <h1 data-aos="fade-down-right" data-aos-delay="250" data-aos-offset="210">Let's Work Together</h1>
         <p data-aos="fade-right" data-aos-delay="850" data-aos-offset="210">I'd love to hear from you! Get in touch with me using the form below.</p>
     </div>
@@ -71,6 +71,20 @@
     <script>
       AOS.init();
     </script>
+
+<script>
+    document.querySelector(".ham").addEventListener("click",function(){
+        document.querySelector(".hero-section").classList.toggle("active")
+
+        document.querySelector(".contact-form-section").addEventListener("click",function(){
+            document.querySelector(".ull").classList.remove("active")
+        })
+
+        document.querySelector(".cont").addEventListener("click",function(){
+            document.querySelector(".ull").classList.remove("active")
+        })
+    })
+</script>
 
 </body>
 </html>

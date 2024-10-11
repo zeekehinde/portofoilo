@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" BB="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zainab Kehinde</title>
-    <link rel="stylesheet" href="work.css">
+    <link rel="icon" href="Assets/logo.png">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -14,7 +15,7 @@
             <img src="Assets/logo.png" alt="my logo" class="logo-img">
         </div>
         <ul class="ull">
-            <li><a href="#home" id="remain">UI Design</a></li>
+            <li><a href="index.html" id="remain">UI Design</a></li>
             <li><a href="graphic.html">Graphics</a></li>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="contact.html">Contact Me</a></li>
@@ -34,22 +35,22 @@
     <div class="works">
 
         <div data-aos="zoom-in-up" data-aos-delay="250" data-aos-offset="210">
-            <img src="Assets/1.jfif" alt=""  height="500px" width="450px" class="img">
+            <img src="Assets/1.jfif" alt=""  class="img1">
             <a href="workdetail.html"><h2>Check</h2></a>
         </div>
 
         <div data-aos="zoom-in-up" data-aos-delay="250" data-aos-offset="210">
-            <img src="Assets/2.jfif" alt="" height="400px" width="450px" class="img">
+            <img src="Assets/2.jfif" alt="" class="img">
             <a href="workdetail.html"><h2>Check</h2></a>
         </div>
 
         <div data-aos="zoom-in-up" data-aos-delay="250" data-aos-offset="210">
-            <img src="Assets/2.jfif" alt="" height="400px" width="450px" class="imgs">
+            <img src="Assets/2.jfif" alt="" class="img">
             <a href="workdetail.html"><h2>Check</h2></a>
         </div>
 
         <div data-aos="zoom-in-up" data-aos-delay="250" data-aos-offset="210">
-            <img src="Assets/1.jfif" alt="" height="500px" width="450px" class="imgs">
+            <img src="Assets/1.jfif" alt="" class="img1">
             <a href="workdetail.html"><h2>Check</h2></a>
         </div>
     </div>
@@ -75,11 +76,23 @@
     </script>
 
     <script>
-        document.querySelector(".ham").addEventListener("click", function(){
-            // window.alert("dddd")
-            document.querySelector(".ham").classList.toggle("active")
+        document.querySelector(".ham").addEventListener("click",function(){
             document.querySelector(".ull").classList.toggle("active")
         })
+
+
+        document.querySelector(".hero").addEventListener("click",function(){
+            document.querySelector(".ull").classList.remove("active")
+        })
+
+        document.querySelector(".works").addEventListener("click",function(){
+            document.querySelector(".ull").classList.remove("active")
+        })
+
+        document.querySelector(".cont").addEventListener("click",function(){
+            document.querySelector(".ull").classList.remove("active")
+        })
+        
     </script>
 
 </body>

@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>work detail</title>
-    <link rel="stylesheet" href="workdetail.css">
+    <title>About me</title>
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav class="fixed-navbar">
         <div class="logo">
             <img src="Assets/logo.png" alt="my logo" class="logo-img">
         </div>
-        <ul>
-            <li><a href="#home" id="remain">UI Design</a></li>
+        <ul class="ull">
+            <li><a href="index.html">UI Design</a></li>
             <li><a href="graphic.html">Graphics</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="aboutme.html" id="remain">About Me</a></li>
             <li><a href="contact.html">Contact Me</a></li>
         </ul>
 
@@ -23,6 +25,32 @@
         </div>
     </nav>
 
+    <div class="intro">
+        <div class="upper"><h1 data-aos="fade-down-right" data-aos-delay="250" data-aos-offset="210">About Me!</h1>
+        <h5 data-aos="fade-right" data-aos-delay="850" data-aos-offset="210">Hi, I'm Zainab Kehinde, a Tech Entrepreneur with a flair for creativity. I merge art, design, and storytelling to innovate. With a passion for learning and exploration, i craft meanignful experiences through writing and entrepreneurship.As a creative individual, i enjoy traveling, making memories, and expressing myself through writing(books, poetry, and spoken word).
+
+        </h5> 
+        </div>
+        <div>
+
+        </div>
+            
+        <h5>Download CV sample <a class="download">here</a>
+        </h5>
+    </div>
+<embed src="Assets/cv_15_1726688696695.pdf" type="application/pdf" style="display: none;" id="cv">
+    <div class="image-container">
+        <div class="overlay"></div>
+        <div class="content">
+            <p data-aos="fade-right" data-aos-delay="350" data-aos-offset="210">Hello! <br> It's nice <br> to meet <br> you. <span> &#10084; &#10084; </span></p>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <img src="Assets/5.jpg" alt=""   data-aos="zoom-in-up" class="first">
+        <img src="Assets/6.jpg" alt=""   data-aos="zoom-in-up" class="first">
+    </div>
+    
 
     <div class="cont">
         <div class="square"></div>
@@ -35,5 +63,31 @@
         <h6>or</h6>
         <h5>zainbkehind@gmail.com</h5>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    
+
+<script>
+    document.querySelector(".ham").addEventListener("click",function(){
+        document.querySelector(".ull").classList.toggle("active")
+    })
+
+    document.querySelector(".intro").addEventListener("click",function(){
+            document.querySelector(".ull").classList.remove("active")
+        })
+
+        document.querySelector(".image-container").addEventListener("click",function(){
+            document.querySelector(".ull").classList.remove("active")
+        })
+
+        document.querySelector(".cont").addEventListener("click",function(){
+            document.querySelector(".ull").classList.remove("active")
+        })
+</script>
+
 </body>
 </html>

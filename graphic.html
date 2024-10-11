@@ -6,34 +6,36 @@
     <title>Graphic</title>
     <link rel="stylesheet" href="graphics.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <nav class="fixed-navbar">
         <div class="logo">
             <img src="Assets/logo.png" alt="my logo" class="logo-img">
         </div>
-        <ul>
-            <li><a href="#home">UI Design</a></li>
+        <ul class="ull">
+            <li><a href="index.html">UI Design</a></li>
             <li><a href="graphic.html"  id="remain">Graphics</a></li>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="contact.html">Contact Me</a></li>
         </ul>
 
-        <div class="ham">
+        <div class="ham" id="hamburger-menu">
             <i class="fa fa-bars"></i>
         </div>
     </nav>
 
     <div class="gra-gallery">
-        <div><img src="Assets/14.jfif" alt="" height="200px" width="250px"></div>
-        <div><img src="Assets/8.jfif" alt="" height="200px" width="200px"></div>
-        <div><img src="Assets/13.jfif" alt="" height="200px" width="200px"></div>
-        <div><img src="Assets/9.jfif" alt="" height="200px" width="200px"></div>
-        <div><img src="Assets/12.jfif" alt="" height="200px" width="200px"></div>
-        <div><img src="Assets/15.jfif" alt="" height="200px" width="200px"></div>
+        <div><img src="Assets/14.jfif" alt="" height="200px" width="250px" data-aos="zoom-in-up" data-aos-delay="250" data-aos-offset="210"></div>
+        <div><img src="Assets/8.jfif" alt="" height="200px" width="200px" data-aos="zoom-in-up" data-aos-delay="250" data-aos-offset="210"></div>
+        <div><img src="Assets/13.jfif" alt="" height="200px" width="200px" data-aos="zoom-in-up" data-aos-delay="250" data-aos-offset="210"></div>
+        <div><img src="Assets/9.jfif" alt="" height="200px" width="200px" data-aos-delay="250" data-aos-offset="210"></div>
+        <div><img src="Assets/12.jfif" alt="" height="200px" width="200px" data-aos="zoom-in-up" data-aos-delay="250" data-aos-offset="210"></div>
+        <div><img src="Assets/15.jfif" alt="" height="200px" width="200px" data-aos="zoom-in-up" data-aos-delay="250" data-aos-offset="210"></div>
         <div><img src="Assets/10.jfif" alt="" height="200px" width="200px"></div>
-        <div><img src="Assets/11.jfif" alt="" height="200px" width="700px"></div>
-        <div><img src="Assets/16.jfif" alt="" height="200px" width="700px"></div>
+        <div><img src="Assets/11.jfif" alt="" height="200px" width="700px" data-aos="zoom-in-up" data-aos-delay="250" data-aos-offset="210"></div>
+        <div><img src="Assets/16.jfif" alt="" height="200px" width="700px" data-aos="zoom-in-up" data-aos-delay="250" data-aos-offset="210"></div>
     </div>
 
     <div class="cont">
@@ -52,5 +54,25 @@
     <script>
       AOS.init();
     </script>
+
+
+<script>
+    document.querySelector(".ham").addEventListener("click",function(){
+        // window.alert("ncjdjsjsjsjsjsjj")
+        document.querySelector(".ull").classList.toggle("active")
+
+        document.querySelector(".gra-gallery").addEventListener("click",function(){
+            document.querySelector(".ull").classList.remove("active")
+        })
+
+        document.querySelector(".cont").addEventListener("click",function(){
+            document.querySelector(".ull").classList.remove("active")
+        })
+    })
+</script>
+  
+  
+  
+
 </body>
 </html>
